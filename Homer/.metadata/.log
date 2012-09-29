@@ -1,0 +1,720 @@
+!SESSION 2012-09-24 17:49:08.579 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /var/www/Homer
+
+!ENTRY org.eclipse.jface 2 0 2012-09-24 17:49:15.553
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-09-24 17:49:15.553
+!MESSAGE A conflict occurred for CTRL+SHIFT+I:
+Binding(CTRL+SHIFT+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Inspect,Inspect,
+		Inspect result of evaluating selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+SHIFT+I,
+	ParameterizedCommand(Command(org.eclipse.php.debug.ui.commands.Inspect,Inspect,
+		Inspect result of evaluating selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:34:20.679
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon", thread "Thread[Worker-10,5,main]" timed out waiting (5004ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 27 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:34:25.728
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon", thread "Thread[Worker-10,5,main]" timed out waiting (5002ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 27 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:34:30.787
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.xdebug.dbgp.session.IDBGpSessionListener", thread "Thread[Worker-10,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.xdebug.dbgp.session.IDBGpSessionListener" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2406)
+	at java.lang.Class.getConstructor0(Class.java:2716)
+	at java.lang.Class.newInstance0(Class.java:343)
+	at java.lang.Class.newInstance(Class.java:325)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 29 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2406)
+	at java.lang.Class.getConstructor0(Class.java:2716)
+	at java.lang.Class.newInstance0(Class.java:343)
+	at java.lang.Class.newInstance(Class.java:325)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:34:35.790
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession", thread "Thread[Worker-10,5,main]" timed out waiting (5002ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2406)
+	at java.lang.Class.getConstructor0(Class.java:2716)
+	at java.lang.Class.newInstance0(Class.java:343)
+	at java.lang.Class.newInstance(Class.java:325)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 29 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2406)
+	at java.lang.Class.getConstructor0(Class.java:2716)
+	at java.lang.Class.newInstance0(Class.java:343)
+	at java.lang.Class.newInstance(Class.java:325)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:34:40.792
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon$PortChangeListener", thread "Thread[Worker-10,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon$PortChangeListener" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.initDeamonChangeListener(DebuggerCommunicationDaemon.java:61)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:50)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 18 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.initDeamonChangeListener(DebuggerCommunicationDaemon.java:61)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:50)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:34:45.794
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry", thread "Thread[Worker-10,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin.getDebugPort(PHPDebugPlugin.java:207)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.getReceiverPort(DebuggerCommunicationDaemon.java:73)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:118)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 21 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin.getDebugPort(PHPDebugPlugin.java:207)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.getReceiverPort(DebuggerCommunicationDaemon.java:73)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:118)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:34:50.797
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry$1", thread "Thread[Worker-10,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry$1" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.loadDebuggers(PHPDebuggersRegistry.java:161)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.<init>(PHPDebuggersRegistry.java:58)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getInstance(PHPDebuggersRegistry.java:63)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getDebuggerConfiguration(PHPDebuggersRegistry.java:86)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin.getDebugPort(PHPDebugPlugin.java:207)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.getReceiverPort(DebuggerCommunicationDaemon.java:73)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:118)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 25 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.loadDebuggers(PHPDebuggersRegistry.java:161)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.<init>(PHPDebuggersRegistry.java:58)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getInstance(PHPDebuggersRegistry.java:63)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getDebuggerConfiguration(PHPDebuggersRegistry.java:86)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin.getDebugPort(PHPDebugPlugin.java:207)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.getReceiverPort(DebuggerCommunicationDaemon.java:73)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:118)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:34:55.800
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.zend.debugger.ZendDebuggerConfiguration", thread "Thread[Worker-10,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.zend.debugger.ZendDebuggerConfiguration" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.loadDebuggers(PHPDebuggersRegistry.java:176)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.<init>(PHPDebuggersRegistry.java:58)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getInstance(PHPDebuggersRegistry.java:63)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getDebuggerConfiguration(PHPDebuggersRegistry.java:86)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin.getDebugPort(PHPDebugPlugin.java:207)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.getReceiverPort(DebuggerCommunicationDaemon.java:73)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:118)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 32 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.loadDebuggers(PHPDebuggersRegistry.java:176)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.<init>(PHPDebuggersRegistry.java:58)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getInstance(PHPDebuggersRegistry.java:63)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getDebuggerConfiguration(PHPDebuggersRegistry.java:86)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin.getDebugPort(PHPDebugPlugin.java:207)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.getReceiverPort(DebuggerCommunicationDaemon.java:73)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:118)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:35:00.802
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.xdebug.dbgp.XDebugDebuggerConfiguration", thread "Thread[Worker-10,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.xdebug.dbgp.XDebugDebuggerConfiguration" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.loadDebuggers(PHPDebuggersRegistry.java:176)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.<init>(PHPDebuggersRegistry.java:58)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getInstance(PHPDebuggersRegistry.java:63)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getDebuggerConfiguration(PHPDebuggersRegistry.java:86)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin.getDebugPort(PHPDebugPlugin.java:207)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.getReceiverPort(DebuggerCommunicationDaemon.java:73)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:118)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 32 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.loadDebuggers(PHPDebuggersRegistry.java:176)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.<init>(PHPDebuggersRegistry.java:58)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getInstance(PHPDebuggersRegistry.java:63)
+	at org.eclipse.php.internal.debug.core.preferences.PHPDebuggersRegistry.getDebuggerConfiguration(PHPDebuggersRegistry.java:86)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin.getDebugPort(PHPDebugPlugin.java:207)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.getReceiverPort(DebuggerCommunicationDaemon.java:73)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:118)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:35:05.805
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread", thread "Thread[Worker-10,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.startListenThread(AbstractDebuggerCommunicationDaemon.java:190)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.startListen(AbstractDebuggerCommunicationDaemon.java:60)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:122)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 21 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.startListenThread(AbstractDebuggerCommunicationDaemon.java:190)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.startListen(AbstractDebuggerCommunicationDaemon.java:60)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.resetSocket(AbstractDebuggerCommunicationDaemon.java:122)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon.init(AbstractDebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.core.zend.communication.DebuggerCommunicationDaemon.init(DebuggerCommunicationDaemon.java:51)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-24 19:35:10.808
+!MESSAGE While loading class "org.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon$PortChangeListener", thread "Thread[Worker-10,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-22,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.0.1.v201201110400 [283]". To avoid deadlock, thread "Thread[Worker-10,5,main]" is proceeding but "org.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon$PortChangeListener" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:../../../home/student/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.eclipse.php.debug.core_3.0.1.v201201110400.jar" by thread "Worker-22".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon.initDeamonChangeListener(XDebugCommunicationDaemon.java:102)
+	at org.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon.init(XDebugCommunicationDaemon.java:80)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 18 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+	at org.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon.initDeamonChangeListener(XDebugCommunicationDaemon.java:102)
+	at org.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon.init(XDebugCommunicationDaemon.java:80)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:92)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2012-09-24 19:48:52.586 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-09-24 19:48:53.710
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2012-09-24 19:48:58.016
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-09-24 19:48:58.016
+!MESSAGE A conflict occurred for CTRL+SHIFT+I:
+Binding(CTRL+SHIFT+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Inspect,Inspect,
+		Inspect result of evaluating selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+SHIFT+I,
+	ParameterizedCommand(Command(org.eclipse.php.debug.ui.commands.Inspect,Inspect,
+		Inspect result of evaluating selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2012-09-24 19:54:04.098
+!MESSAGE Invalid preference page path: HTML Syntax
+
+!ENTRY org.eclipse.ui 4 4 2012-09-24 19:54:04.098
+!MESSAGE Invalid preference page path: XML Syntax
